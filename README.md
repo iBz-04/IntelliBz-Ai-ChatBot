@@ -37,7 +37,7 @@ Clone the project
 
 ```bash
   git clone https://github.com/iBz-04/IntelliBz-Ai-ChatBot
-``
+```
 ## Feedback
 
 If you have any feedback, please reach out to me ibz.04dev@gmail.com
