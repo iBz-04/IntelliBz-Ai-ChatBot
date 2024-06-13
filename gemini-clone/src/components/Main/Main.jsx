@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
+import intelliBz from "../../../public/intelliBz.svg";
 
 const Main = () => {
   const {
@@ -17,8 +18,8 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>IntelliBz</p>
-        <img src={assets.user_icon} alt="" />
+        <img className="logo" src={intelliBz} alt="intelliBz logo" />
+        <img className="user" src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
         {showResult ? (
@@ -50,7 +51,7 @@ const Main = () => {
             </div>
             <div className="cards">
               <div className="card">
-                <p>Suggest beautiful places to see on an upcoming road trip</p>
+                <p>Suggest beautiful places to see on road trips</p>
                 <img src={assets.compass_icon} alt="" />
               </div>
               <div className="card">
