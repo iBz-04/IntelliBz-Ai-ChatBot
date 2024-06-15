@@ -76,7 +76,7 @@ const Main = () => {
               onChange={(e) => setInput(e.target.value)}
               value={input}
               type="text"
-              placeholder="Enter a prompt here"
+              placeholder="type..."
             />
             <div>
               <img src={assets.gallery_icon} width={30} alt="" />

@@ -31,12 +31,12 @@
 .greet {
   margin: 50px 0px;
   font-size: 56px;
-  color: #c4c7c5;
+  color: #c4c7c6;
   font-weight: 500;
   padding: 20px;
 }
 .greet span {
-  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  background: -webkit-linear-gradient(16deg, #ae4bff, #ff5546);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,13 +49,13 @@
 .card {
   height: 200px;
   padding: 15px;
-  background-color: #f0f4f9;
+  background-color: #f9f0f9;
   border-radius: 10px;
   position: relative;
   cursor: pointer;
 }
 .card:hover {
-  background-color: #dfe4ea;
+  background-color: #e7dfea;
 }
 .card p {
   color: #585858;
@@ -83,7 +83,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  background-color: #f0f4f9;
+  background-color: #f6f0f9;
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -126,6 +126,7 @@
 }
 .result img {
   width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .result-data {
@@ -144,7 +145,7 @@
   border: none;
   animation: loader 3s infinite linear;
   background-color: #f6f7f8;
-  background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+  background: linear-gradient(to right, #ff9eff, #ffffff, #c89eff);
   background-size: 800px 50px;
   height: 20px;
 }
@@ -162,27 +163,51 @@
   line-height: 1.8;
 }
 @media (max-width: 600px) {
+  .main {
+    flex: 1;
+    width: 60%;
+    min-height: 100vh;
+    padding-left: 15.5vw;
+    padding-right: 1vw;
+    padding-bottom: 15vh;
+    position: relative;
+  }
+
   .card {
     height: fit-content;
   }
 
   .card img {
-    width: 22px;
+    width: 21px;
   }
   .greet {
     font-size: medium;
+    text-align: right;
   }
+
+  .main-bottom {
+    padding-right: 12vw;
+  }
+
+  .bottom-info {
+    padding-right: 14vw;
+  }
+
   .main-bottom input {
     flex: none;
     width: 140px;
   }
   .main-bottom img {
-    width: 20px;
+    width: 18px;
   }
   .search-box {
     padding: 5px 10px;
+    padding-left: 35px;
+    padding-right: 5vw;
+    width: fit-content;
   }
   .search-box div {
     gap: 5px;
+    padding-right: 5vw;
   }
 }
